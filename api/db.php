@@ -1,5 +1,5 @@
 <?php
-// 1. Conexión PostgreSQL (Supabase)
+// Conexión PostgreSQL (Railway)
 $connString = sprintf(
     "host=%s port=%s dbname=%s user=%s password=%s",
     getenv("DB_HOST"),
@@ -11,7 +11,7 @@ $connString = sprintf(
 
 $conexion = pg_connect($connString);
 
-// 2. Validación de conexión
+// Validación de conexión
 if (!$conexion) {
     echo "❌ Error al conectar a la base de datos.";
     exit();
